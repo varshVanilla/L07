@@ -3,31 +3,31 @@ import {View, Text, StyleSheet} from 'react-native';
 
 const styles = StyleSheet.create({
     parent: {
-        flex: _______________,
-        flexDirection: _______________,
-        justifyContent: _______________,
-        _______________: 'center',
-        _______________: 'whitesmoke',
-        _______________: 30,
+        flex: 1,
+        flexDirection:'row',
+        justifyContent: 'space-around',
+        alignItems: 'center',
+        backgroundColor: 'whitesmoke',
+        marginTop: 30,
     },
     child: {
-        width: _______________,
-        height: _______________,
-        justifyContent: _______________,
-        alignItems: _______________,
+        width: 80,
+        height: 80,
+        justifyContent: "center",
+        alignItems: "center",
     },
 });
 
 const Exercise4 = () => {
     return (
-        <View>
-            <View style={[{backgroundColor: 'skyblue'}]}>
+        <View style={styles.parent}>
+            <View style={[styles.child, {backgroundColor: 'skyblue'}]}>
                 <Text>Square 1</Text>
             </View>
-            <View style={[{backgroundColor: 'mediumaquamarine'}]}>
+            <View style={[styles.child, {backgroundColor: 'mediumaquamarine'}]}>
                 <Text>Square 2</Text>
             </View>
-            <View style={[{backgroundColor: 'crimson'}]}>
+            <View style={[styles.child, {backgroundColor: 'crimson'}]}>
                 <Text>Square 3</Text>
             </View>
         </View>

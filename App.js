@@ -6,8 +6,8 @@ import Exercise3A from "./Exercise3A";
 import Exercise3B from "./Exercise3B";
 import Exercise3C from "./Exercise3C";
 import Exercise3D from "./Exercise3D";
-// import Exercise3E from "./Exercise3E";
-// import Exercise4 from "./Exercise4";
+import Exercise3E from "./Exercise3E";
+import Exercise4 from "./Exercise4";
 
 const L07App = () => {
     return (
@@ -24,4 +24,4 @@ const L07App = () => {
     );
 };
 
-export default Exercise3D;
+export default Exercise4;
